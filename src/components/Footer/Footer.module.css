@@ -8,6 +8,14 @@
 }
 
 .logo {
-    font-family: var(--playfair);
-    font-size: 1.5rem;
+  font-family: var(--playfair);
+  font-size: 1.5rem;
+}
+
+.signature {
+  font-size: 0.75rem;
+}
+
+.signature a {
+  color: inherit;
 }
