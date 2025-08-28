@@ -141,3 +141,18 @@
 .emptySubheading {
   margin-bottom: 1rem;
 }
+
+@media only screen and (max-width: 500px) {
+  .cart {
+    width: 100%;
+  }
+
+  .cartItem {
+    flex-wrap: wrap;
+    justify-content: right;
+  }
+
+  .control {
+    padding-bottom: 0.5rem;
+  }
+}

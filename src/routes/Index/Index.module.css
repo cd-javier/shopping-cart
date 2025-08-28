@@ -5,7 +5,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  text-align: center;
+  gap: 1.5rem;
 }
 
 .indexWrapper > * {
@@ -19,4 +20,14 @@
 
 .subheading {
   font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  .subheading {
+    font-size: 1.25rem;
+  }
 }
