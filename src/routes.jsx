@@ -4,6 +4,9 @@ import Products from './routes/Products/Products';
 import ProductDetails from './routes/ProductDetails/ProductDetails';
 import Checkout from './routes/Checkout/Checkout';
 import ErrorPage from './routes/ErrorPage/ErrorPage';
+import addToCartAction from './routes/addToCart';
+import updateCartAction from './routes/updateCart';
+import removeFromCartAction from './routes/removeFromCart';
 
 const routes = [
   {
@@ -19,14 +22,18 @@ const routes = [
             path: '/products',
             element: <Products />,
             loader: Products.loader,
-            action: Products.action,
+            shouldRevalidate: ({ currentUrl, nextUrl }) => {
+              return currentUrl.search !== nextUrl.search;
+            },
           },
           {
             path: '/products/:productId',
             element: <ProductDetails />,
             loader: ProductDetails.loader,
-            action: ProductDetails.action,
           },
+          { path: '/cart/add', action: addToCartAction },
+          { path: '/cart/update', action: updateCartAction },
+          { path: '/cart/remove', action: removeFromCartAction },
           { path: '/checkout', element: <Checkout /> },
         ],
       },
