@@ -1,6 +1,5 @@
 import { Outlet } from 'react-router-dom';
 import { useState } from 'react';
-import { useReducer } from 'react';
 
 import styles from './Root.module.css';
 
