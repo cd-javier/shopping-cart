@@ -12,10 +12,18 @@ export default function ProductImages({ images }) {
         <div className={styles.thumbnails}>
           {images.map((img, index) => (
             <img
+              className={index === showingIndex ? styles.selected : undefined}
               key={index}
               src={img}
               onClick={() => setShowingIndex(index)}
-              className={index === showingIndex ? styles.selected : undefined}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault(); // prevents scrolling on Space
+                  setShowingIndex(index);
+                }
+              }}
+              tabIndex={0}
+              role="button"
             />
           ))}
         </div>
