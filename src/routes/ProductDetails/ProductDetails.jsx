@@ -13,10 +13,6 @@ async function loader({ params }) {
   return product;
 }
 
-async function action({ request }) {
-  const formData = await request.formData();
-}
-
 export default function ProductDetails() {
   const product = useLoaderData();
 
@@ -38,4 +34,3 @@ export default function ProductDetails() {
 }
 
 ProductDetails.loader = loader;
-ProductDetails.action = action;
