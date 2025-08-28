@@ -1,0 +1,20 @@
+.cartControlForm {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.qtyBtn {
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  width: 30px;
+}
+
+.input {
+  width: 3rem;
+  text-align: center;
+}
+
+.cartControlForm .flexGrow {
+  flex: 1;
+}
