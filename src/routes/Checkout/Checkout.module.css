@@ -1,0 +1,14 @@
+.wrapper {
+  align-self: center;
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.heading {
+    font-family: var(--playfair);
+    font-size: 2rem;
+}
