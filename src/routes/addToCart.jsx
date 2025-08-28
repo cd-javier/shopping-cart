@@ -7,5 +7,10 @@ export default async function addToCartAction({ request }) {
   const price = parseFloat(formData.get('price'));
 
   cart.addItem({ id, quantity, price });
+
+  if (typeof window !== 'undefined') {
+    window.dispatchEvent(new Event('cart:open'));
+  }
+
   return null;
 }
