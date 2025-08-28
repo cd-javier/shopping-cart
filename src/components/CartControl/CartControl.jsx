@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Form, useFetcher } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { useFetcher } from 'react-router-dom';
 
 import styles from './CartControl.module.css';
 
@@ -16,6 +16,10 @@ export function QuantityControl({ initialValue = 1 }) {
     if (value === 1) return;
     setValue((value) => value - 1);
   }
+
+  useEffect(() => {
+    setValue(initialValue);
+  }, [initialValue]);
 
   return (
     <>
