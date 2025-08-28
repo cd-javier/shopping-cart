@@ -1,0 +1,22 @@
+.indexWrapper {
+  flex: 1;
+  align-self: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.indexWrapper > * {
+  margin: 0;
+}
+
+.heading {
+  font-family: var(--playfair);
+  font-size: 3rem;
+}
+
+.subheading {
+  font-size: 1.5rem;
+}

@@ -1,0 +1,17 @@
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  min-height: 100svh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper main {
+  flex: 1;
+  padding: 1rem 0;
+
+  display: flex;
+  width: 100%;
+}

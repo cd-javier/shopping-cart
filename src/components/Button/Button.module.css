@@ -1,0 +1,12 @@
+.btn {
+  appearance: none;
+  border: none;
+
+  background: var(--accent);
+  color: var(--bg);
+
+  text-decoration: none;
+  display: inline-block;
+
+  padding: 0.5rem 1rem;
+}

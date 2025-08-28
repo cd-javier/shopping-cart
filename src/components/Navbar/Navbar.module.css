@@ -1,0 +1,46 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 1rem 0;
+}
+
+.logo {
+  font-family: var(--playfair);
+  font-size: 2rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.navbar form {
+  position: relative;
+}
+
+/* Chrome, Edge, Safari (WebKit-based) */
+.navbar input[type='search']::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+
+.searchBtn {
+  appearance: none;
+  border: none;
+  background: transparent;
+  padding: 0;
+  position: absolute;
+
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.searchBtn svg {
+  width: 24px;
+}
+
+.navbar nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
